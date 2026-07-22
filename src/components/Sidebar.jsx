@@ -38,7 +38,7 @@ export default function Sidebar({
 
       {/* Floating Curved Outer Wrapper */}
       <div 
-        className={`fixed top-3 bottom-3 ms-4 z-40 w-60 transition-all duration-300 ${sidebarWidth} ${
+        className={`fixed top-3 bottom-3 ${!mobileOpen? "ms-4":"ms-3"} z-40 w-60 transition-all duration-300 ${sidebarWidth} ${
           mobileOpen ? "translate-x-0" : "-translate-x-[calc(100%+1.25rem)] lg:translate-x-0"
         }`}
       >
