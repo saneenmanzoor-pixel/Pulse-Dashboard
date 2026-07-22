@@ -6,7 +6,7 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     // Default to dark mode for premium SaaS visual appeal
     const saved = localStorage.getItem("theme");
-    return saved || "dark";
+    return saved || "light";
   });
 
   useEffect(() => {
