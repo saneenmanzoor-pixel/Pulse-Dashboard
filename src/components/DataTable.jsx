@@ -314,15 +314,6 @@ export default function DataTable({ data }) {
           {processed.length === 0 ? "0" : (page - 1) * pageSize + 1}–{Math.min(page * pageSize, processed.length)} of {processed.length} entries
         </span>
         <div className="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end order-1 sm:order-2">
-          <div className="flex items-center gap-2">
-            <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Rows</span>
-            <GlassDropdown
-              value={pageSize}
-              onChange={(v) => { setPageSize(Number(v)); setPage(1); }}
-              options={PAGE_OPTIONS}
-              placeholder="Rows per page"
-            />
-          </div>
           <div className="flex items-center gap-1.5">
             <button disabled={page === 1} onClick={() => setPage(p => p - 1)}
               className="p-1 rounded-lg disabled:opacity-30 disabled:cursor-not-allowed text-slate-500 dark:text-slate-400 transition-colors duration-150"
