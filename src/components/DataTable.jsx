@@ -151,7 +151,7 @@ export default function DataTable({ data }) {
   };
 
   return (
-    <div className="glass-card bento-hover rounded-3xl overflow-visible z-3 flex flex-col max-h-[480px] ">
+    <div className="glass-card bento-hover rounded-3xl overflow-hidden flex flex-col h-auto w-full">
       {/* Toolbar */}
       <div className="p-4 sm:p-5 flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between shrink-0"
         style={{ borderBottom: "1px solid rgba(255,255,255,0.25)" }}>
